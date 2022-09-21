@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "rile0056";
 $password = "T833481t!";
-$dbname = 'trileyou_database1'
+
   
 
 // Create connection
