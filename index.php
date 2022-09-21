@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "trileyou_rile0056";
 $password = "T833481t!";
-$dbname = "trileyou_database1"
+$dbname = "trileyou_database1";
   
 
 // Create connection
