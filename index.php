@@ -17,17 +17,21 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$sql = "SELECT prefix,number,description FROM course";
+$sql = "SELECT prefix, number,description from course";
 $result = $conn->query($sql);
 
-if ($result->num_rows = 0) {
+if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["prefix"]. " - Name: " . $row["number"]. " " . $row["description"]. "<br>";
+?>
+  <tr>
+    <td><?=$row["instructor_id"]?></td>
+    <td><?=$row["instructor_name"]?></td>
+  </tr>
+<?php
   }
 } else {
   echo "0 results";
 }
-$conn->close();
 
 ?>
