@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$sql = "SELECT * FROM course";
+$sql = "SELECT prefix,number,description FROM course";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
