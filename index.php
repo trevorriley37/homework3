@@ -15,23 +15,17 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$result = mysqli_query($con,"SELECT * FROM Courses");
+$sql = "SELECT * FROM courses";
+$result = $conn->query($sql);
 
-echo "<table border='1'>
-<tr>
-<th>prefix</th>
-<th>number</th>
-</tr>";
-
-while($row = mysqli_fetch_array($result))
-{
-echo "<tr>";
-echo "<td>" . $row['prefix'] . "</td>";
-echo "<td>" . $row['number'] . "</td>";
-echo "</tr>";
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["prefix"]. " - Name: " . $row["number"]. " " . $row["description"]. "<br>";
+  }
+} else {
+  echo "0 results";
 }
-echo "</table>";
-
-mysqli_close($con);
+$conn->close();
 
 ?>
