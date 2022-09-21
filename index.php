@@ -19,8 +19,8 @@ $result = mysqli_query($con,"SELECT * FROM Courses");
 
 echo "<table border='1'>
 <tr>
-<th>Firstname</th>
-<th>Lastname</th>
+<th>prefix</th>
+<th>number</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
