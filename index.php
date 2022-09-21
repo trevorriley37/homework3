@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "trileyou_rile0056";
 $password = "T833481t!";
-
+$dbname = "trileyou_database1"
   
 
 // Create connection
@@ -18,7 +18,7 @@ echo "Connected successfully";
 $sql = "SELECT prefix,number,description FROM course";
 $result = $conn->query($sql);
 
-if ($result->num_rows >= 0) {
+if ($result->num_rows = 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
     echo "id: " . $row["prefix"]. " - Name: " . $row["number"]. " " . $row["description"]. "<br>";
