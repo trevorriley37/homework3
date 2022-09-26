@@ -25,9 +25,9 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["prefix"]?></td>
-    <td><?=$row["number"]?></td>
-    <td><?=$row["description"]?></td>
+    <td><?=$row[\t"prefix"]?></td>
+    <td><?=$row[\t"number"]?></td>
+    <td><?=$row[\t"description"]?></td>
   </tr>
 <?php
   }
