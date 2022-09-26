@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["abbreviation"]?></td>
+    <td><?=$row["Abbreviation"]?></td>
     <td><?=$row["fullname"]?></td>
     
   </tr>
