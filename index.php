@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$sql = "SELECT prefix, number,description from course";
+$sql = "SELECT Abbreviation, fullname from City";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -25,9 +25,9 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row[\t"prefix"]?></td>
-    <td><?=$row[\t"number"]?></td>
-    <td><?=$row[\t"description"]?></td>
+    <td><?=$row["abbreviation"]?></td>
+    <td><?=$row["fullname"]?></td>
+    
   </tr>
 <?php
   }
