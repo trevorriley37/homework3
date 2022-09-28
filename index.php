@@ -35,5 +35,24 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 
+echo "<table >
+  <tr>
+    <td >Abbreviation </td>
+    <td >Full Name</td>
+    <td >Email</td>
+    <td >Role</td>
+  </tr>";
+
+  while($row = mysqli_fetch_array($run, MYSQLI_ASSOC))
+  {
+  echo "<tr>";
+  echo "<td>".$row['Abbreviation']."</td>";
+  echo "<td>".$row['fullname']."</td>";
+  echo "</tr>";
+  echo "</table>";}
+
+ }
+
+
 ?>
 
