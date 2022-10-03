@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["Abbreviation"]?></td>
-    <td><?=$row["fullname"]?></td>
+    <td><?=$col["fullname"]?></td>
     
   </tr>
 <?php
