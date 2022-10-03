@@ -29,7 +29,6 @@ $result = $conn->query($sql);
       
     </tr>
   </thead>
-  <tbody>
 
 
 if ($result->num_rows > 0) {
@@ -37,6 +36,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
 
+  <tbody>
     <tr>
       <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
