@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$sql = "SELECT city_ID,Abbreviation, fullname from City";
+$sql = "SELECT city_ID,Abbreviation, fullname from City order by city_ID";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
