@@ -36,8 +36,8 @@ if ($result->num_rows > 0) {
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>["Abbreviation"]</td>
-      <td>["fullname"]</td>
+      <td><?=$row["Abbreviation"]?></td>
+      <td><?=$row["fullname"]?></td>
     </tr>
   </tbody>
 </table>
