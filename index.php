@@ -21,11 +21,7 @@ $sql = "SELECT city_ID,Abbreviation, fullname from City order by city_ID";
 $result = $conn->query($sql);
 
 
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-  ?> <table class="table table-dark table-striped">
+?> <table class="table table-dark table-striped">
   <thead>
     <tr>
       <th scope="col">City ID</th>
@@ -34,6 +30,12 @@ if ($result->num_rows > 0) {
       
     </tr>
   </thead>
+
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+  
   <tbody>
     <tr>
      
