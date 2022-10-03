@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 echo "Connected successfully";
 
 
-$sql = "SELECT Abbreviation, fullname from City";
+$sql = "SELECT city_ID,Abbreviation, fullname from City";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
