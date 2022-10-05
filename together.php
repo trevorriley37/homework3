@@ -18,7 +18,8 @@ $result = $conn->query($sql);
 </table>
 <?php
 
-
+   ?> <table class="table">
+  <tbody>
 
 
 if ($result->num_rows > 0) {
@@ -35,10 +36,11 @@ if ($result->num_rows > 0) {
       <td><?=$row["football_name"]?></td>
       <td><?=$row["ba.Team_Name"]?></td>
     </tr>
-  </tbody>
+
+  }
+     </tbody>
 </table>
 <?php
-  }
 } else {
   echo "0 results";
 }
