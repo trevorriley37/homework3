@@ -8,9 +8,11 @@ $result = $conn->query($sql);
   <thead>
     <tr>
       <th scope="col">City ID</th>
-      <th scope="col"></th>
+      <th scope="col">Abbreviation</th>
       <th scope="col">Name</th>
-      
+      <th scope="col">Baseball Team</th>
+     <th scope="col">Football Team</th>
+     <th scope="col">Basketball Team</th>
     </tr>
   </thead>
   <tbody>
