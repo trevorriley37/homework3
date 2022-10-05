@@ -45,13 +45,14 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
  
-     ?> <table class="table table-dark table-striped">
+     ?> <table class="table table-dark table-striped"
+               align="center">
   <thead>
     
   </thead>
   <tbody>
     <tr>
-     < align="center">
+     
     <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
