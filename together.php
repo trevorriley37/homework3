@@ -2,7 +2,7 @@
 
 
 
-<table class="table table-striped">
+<table class="table table-dark table-striped">
   <thead>
     <tr>
       <th>City_ID</th>
