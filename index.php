@@ -51,7 +51,7 @@ if ($result->num_rows > 0) {
   </thead>
   <tbody>
     <tr>
-     
+     < align="center">
     <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
