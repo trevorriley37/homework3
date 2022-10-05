@@ -27,7 +27,7 @@ if ($result->num_rows > 0) {
  
 ?>
  
-    <tr>
+    <tr> <table class="table table-dark table-striped">
       <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
