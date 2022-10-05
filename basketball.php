@@ -2,7 +2,7 @@
 
 <?
 
-$sql = "SELECT city_ID,Team_Name from basketball order by city_ID";
+$sql = "SELECT city_ID,Team_Name from Basketball order by city_ID";
 $result = $conn->query($sql);
 
  ?> <table class="table table-dark table-striped">
@@ -38,9 +38,8 @@ if ($result->num_rows > 0) {
   <tbody>
     <tr>
      
-    <th scope="row"><?=$row["city_ID"]?></th>
-      
-      <td><?=$row["Team_Name"]?></td>
+    <th scope="row"><?=$row["city_ID"]?></th> 
+     <td><?=$row["Team_Name"]?></td>
     </tr>
   </tbody>
 </table>
