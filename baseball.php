@@ -3,7 +3,7 @@
 
 <?
 
-$sql = "SELECT city_ID,Baseball_name from Bootball order by city_ID";
+$sql = "SELECT city_ID,Baseball_name from Baseball order by city_ID";
 $result = $conn->query($sql);
 
  ?> <table class="table table-dark table-striped">
