@@ -15,10 +15,9 @@ $result = $conn->query($sql);
      <th scope="col">Basketball Team</th>
     </tr>
   </thead>
-</table>
+<tbody>
+
 <?php
-
-
  
 
 
@@ -26,11 +25,7 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
  
-
-?> <table class="table table-dark table-striped"
-               align="center">
- 
-
+?>
  
     <tr>
       <th scope="row"><?=$row["city_ID"]?></th>
