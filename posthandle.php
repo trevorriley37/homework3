@@ -23,7 +23,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         echo $name;
     }
+  
+  
 }
+
+  if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+?>
+  <tr>
+    <td><?=$row["fullname"]?></td>
+    <td><?=$row["Team_Name"]?></td>
+    <td><?=$row["football_name"]?></td>
+    <td><?=$row["Baseball_name"]?></td>
+  </tr>
+<?php
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
 ?>
 
 </body>
