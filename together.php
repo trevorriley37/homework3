@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
  
     <tr>
       <th scope="row"><?=$row["city_ID"]?></th>
-      <td><?=$row["Abbreviation"]?></td>
+      <td><?=$col["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
       <td><?=$row["Baseball_name"]?></td>
       <td><?=$row["football_name"]?></td>
