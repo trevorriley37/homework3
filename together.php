@@ -32,13 +32,9 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
  
      ?> <table class="table">
-  <thead>
-    
-  </thead>
   <tbody>
     <tr>
-     
-      <?=$row["city_ID"]?></th>
+      <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
       <td><?=$row["Baseball_name"]?></td>
