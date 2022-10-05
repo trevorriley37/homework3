@@ -10,7 +10,7 @@ form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 
     $name = $_POST['fname'];
     
-
+?>
       
 
   <?php
