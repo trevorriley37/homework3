@@ -12,6 +12,7 @@
   </thead>
   <tbody>
     <?php
+    //I know a post is required but im not quite sure where it would be but there is use of a get variable here
     $iid = $_GET['id'];
 
     
