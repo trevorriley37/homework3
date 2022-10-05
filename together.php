@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["c.city_ID"]?></td>
     <td><?=$row["Abbreviation"]?></td>
    <td><?=$row["fullname"]?></td>
-    <td><?=$row["Baseball_Name"]?></td>
+    <td><?=$row["Baseball_name"]?></td>
     <td><?=$row["football_name"]?></td>
     <td><?=$row["ba.Team_Name"]?></td>
     
