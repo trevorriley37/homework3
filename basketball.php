@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     <tr>
      
     <th scope="row"><?=$row["city_ID"]?></th> 
-     <td> <?=$row["Team_Name"]?> <align="right"> </td>
+     <td> <?=$row["Team_Name"] align="right" ?></td>
     </tr>
   </tbody>
 </table>
