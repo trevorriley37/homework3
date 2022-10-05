@@ -38,8 +38,8 @@ if ($result->num_rows > 0) {
   <tbody>
     <tr>
      
-    <th scope="row"><?=$row["city_ID"]?></th>
-      <th scope="row"><td><?=$row["Abbreviation"]?></td>
+      <?=$row["city_ID"]?></th>
+      <td><?=$row["Abbreviation"]?></td>
       <td><?=$row["fullname"]?></td>
       <td><?=$row["Baseball_name"]?></td>
       <td><?=$row["football_name"]?></td>
