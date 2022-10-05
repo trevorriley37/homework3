@@ -27,6 +27,8 @@ if ($result->num_rows > 0) {
  
 ?>
  
+ <tbody>
+ 
     <tr> <table class="table table-dark table-striped">
       <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
