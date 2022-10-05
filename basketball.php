@@ -1,5 +1,7 @@
 <?php require_once("header.php"); ?>
 
+<?
+
 $sql = "SELECT city_ID,Team_Name from basketball order by city_ID";
 $result = $conn->query($sql);
 
