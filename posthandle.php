@@ -1,6 +1,6 @@
 <?php require_once("header.php"); ?>
 
-//An attempt at using a post variable to filter data
+//an attempt at using a post variable to filter data
 
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
