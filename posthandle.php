@@ -13,6 +13,11 @@
 <?
   
   
+form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // collect value of input field
@@ -20,6 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($name)) {
         echo "Name is empty";
     } else {
+        echo $name;
+    }
+}
+?>
       
 
   <?php
@@ -42,7 +51,7 @@ $result = $conn->query($sql);
 } else {
   echo "0 results";
 }
-    }
+    
 $conn->close();
 ?>
 
