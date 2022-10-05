@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
      
    <td><?=$row["city_ID"]?></td>
     <td><?=$row["Abbreviation"]?></td>
-    <td><a href="together.php"><?=$row["fullname"]?></a></td>
+    <td><a href="cities.php?id=<?=$row["city_ID"]?>"><?=$row["fullname"]?></a></td>
     </tr>
  
 <?php
