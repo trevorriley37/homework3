@@ -29,6 +29,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Baseball</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Together</a>
+        </li>
       </ul>
     </div>
   </div>
