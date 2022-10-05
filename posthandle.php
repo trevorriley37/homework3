@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($name)) {
         echo "Name is empty";
     } else {
-        echo $fullname;
+        echo $name;
     }
 }
 ?>
