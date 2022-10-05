@@ -30,8 +30,8 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
  
-     ?> <table class="table table-dark table-striped"
-               align="center">
+     ?> <table class="table table-dark table-striped">
+               
   <thead>
     
   </thead>
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     <tr>
      
     <th scope="row"><?=$row["city_ID"]?></th> 
-     <td><?=$row["Team_Name"]?></td>
+     <td><?=$row["Team_Name"] align="center"?></td>
     </tr>
   </tbody>
 </table>
