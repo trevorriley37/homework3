@@ -31,7 +31,7 @@ if ($result->num_rows > 0) {
  
     <tr> <table class="table table-dark table-striped">
       <th scope="row"><?=$row["city_ID"]?></th>
-      td><?=$row["Abbreviation"]["fullname"]?></td>
+      td><?=$row["Abbreviation"+ "fullname"]?></td>
     
       <td><?=$row["Baseball_name"]?></td>
       <td><?=$row["football_name"]?></td>
