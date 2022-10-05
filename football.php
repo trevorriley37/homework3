@@ -5,7 +5,6 @@
   <thead>
     <tr>
       <th scope="col">City ID</th>
-      <th scope="col"></th>
       <th scope="col">Football Team Name</th>
     </tr>
   </thead>
