@@ -41,11 +41,11 @@ if ($result->num_rows > 0) {
       <td><?=$row["ba.Team_Name"]?></td>
     </tr>
     </tbody>
-
+</table>
+<?php
 
   }
-    </table>
-<?php
+    
 } else {
   echo "0 results";
 }
