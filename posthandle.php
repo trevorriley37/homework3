@@ -42,6 +42,7 @@ $result = $conn->query($sql);
 } else {
   echo "0 results";
 }
+    }
 $conn->close();
 ?>
 
