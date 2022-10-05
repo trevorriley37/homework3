@@ -20,14 +20,7 @@ echo "Connected successfully";
 $sql = "SELECT city_ID,Abbreviation, fullname from City order by city_ID";
 $result = $conn->query($sql);
 
-
-
-
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-  ?> <table class="table table-dark table-striped">
+ ?> <table class="table table-dark table-striped">
   <thead>
     <tr>
       <th scope="col">City ID</th>
@@ -35,6 +28,26 @@ if ($result->num_rows > 0) {
       <th scope="col">Name</th>
       
     </tr>
+  </thead>
+  <tbody>
+    <tr>
+     
+    
+    </tr>
+  </tbody>
+</table>
+<?php
+
+
+
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+ 
+     ?> <table class="table table-dark table-striped">
+  <thead>
+    
   </thead>
   <tbody>
     <tr>
