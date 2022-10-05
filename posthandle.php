@@ -1,8 +1,9 @@
 <?php require_once("header.php"); ?>
 
-//an attempt at using a post variable to filter data
+<?
+//an attempt at using post variable to filter data, where statement seems to not enjoy it
 
-
+?>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
   Name: <input type="text" name="fname">
   <input type="submit">
