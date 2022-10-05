@@ -34,11 +34,11 @@ if ($result->num_rows > 0) {
  
     <tr>
       <th scope="col"><?=$row["city_ID"]?></th>
-      <td><?=$row["Abbreviation"]?></td>
-      <td><?=$row["fullname"]?></td>
-      <td><?=$row["Baseball_name"]?></td>
-      <td><?=$row["football_name"]?></td>
-      <td><?=$row["ba.Team_Name"]?></td>
+      <td><?=$col["Abbreviation"]?></td>
+      <td><?=$col["fullname"]?></td>
+      <td><?=$col["Baseball_name"]?></td>
+      <td><?=$col["football_name"]?></td>
+      <td><?=$col["ba.Team_Name"]?></td>
     </tr>
     </tbody>
 </table>
