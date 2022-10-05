@@ -41,7 +41,7 @@ if ($result->num_rows > 0) {
      
     <th scope="row"><?=$row["city_ID"]?></th>
       <td><?=$row["Abbreviation"]?></td>
-      <td><?=$section_row["fullname"]?></td>
+      <td><?=$row align = "center" ["fullname"]?></td>
       <td><?=$row["Baseball_Name"]?></td>
       <td><?=$row["football_name"]?></td>
       <td><?=$row["ba.Team_Name"]?></td>
