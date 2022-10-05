@@ -15,12 +15,6 @@ $result = $conn->query($sql);
      <th scope="col">Basketball Team</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-     
-    
-    </tr>
-  </tbody>
 </table>
 <?php
 
