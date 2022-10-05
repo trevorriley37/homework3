@@ -29,6 +29,8 @@ if ($result->num_rows > 0) {
 
 ?> <table class="table table-dark table-striped"
                align="center">
+ 
+ <table border=1 frame=void rules=rows>
   <tbody>
  
     <tr>
