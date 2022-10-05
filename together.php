@@ -30,10 +30,9 @@ if ($result->num_rows > 0) {
  <tbody>
  
     <tr> <table class="table table-dark table-striped">
-      <th scope="row"><?=$row["city_ID","Abbreviation"]?></th>
-     
-      
-      <td><?=$row["fullname"]?></td>
+      <th scope="row"><?=$row["city_ID"]?></th>
+      td><?=$row["Abbreviation"]["fullname"]?></td>
+    
       <td><?=$row["Baseball_name"]?></td>
       <td><?=$row["football_name"]?></td>
       <td><?=$row["ba.Team_Name"]?></td>
