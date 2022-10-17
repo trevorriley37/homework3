@@ -2,7 +2,7 @@
 
 <?php
 
-$sql = "SELECT instructor_id, instructor_name from instructor";
+$sql = "SELECT city_ID, fullname from City";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -11,14 +11,14 @@ if ($result->num_rows > 0) {
 ?>
    <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><?=$row["instructor_name"]?></h5>
+      <h5 class="card-title"><?=$row["fullname"]?></h5>
       <p class="card-text"><ul>
 <?php
-    $section_sql = "select c.description from section s join instructor i on i.instructor_id = s.instructor_id join course c on c.course_id = s.course_id where i.instructor_id=" . $row["instructor_id"];
+    $section_sql = "SELECT c.city_ID,Abbreviation ,fullname, Baseball_name, football_name,Team_Name FROM Baseball b join Football f on b.city_ID =f.city_ID join City c on f.city_ID =c.city_ID join Basketball ba on c.city_ID = ba.city_ID order by c.city_ID" . $row["c.city_ID"];
     $section_result = $conn->query($section_sql);
     
     while($section_row = $section_result->fetch_assoc()) {
-      echo "<li>" . $section_row["description"] . "</li>";
+      echo "<li>" . $section_row["football_name"] . "</li>";
     }
 ?>
       </ul></p>
