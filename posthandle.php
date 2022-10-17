@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["fullname"]?></h5>
       <p class="card-text"><ul>
 <?php
-    $section_sql = "SELECT c.city_ID,Abbreviation ,fullname, Baseball_name, football_name,Team_Name FROM Baseball b join Football f on b.city_ID =f.city_ID join City c on f.city_ID =c.city_ID join Basketball ba on c.city_ID = ba.city_ID order by c.city_ID" . $row["c.city_ID"];
+    $section_sql = "SELECT c.city_ID,Abbreviation ,fullname, Baseball_name, football_name,Team_Name FROM Baseball b join Football f on b.city_ID =f.city_ID join City c on f.city_ID =c.city_ID join Basketball ba on c.city_ID = ba.city_ID order by c.city_ID" . $row["city_ID"];
     $section_result = $conn->query($section_sql);
     
     while($section_row = $section_result->fetch_assoc()) {
