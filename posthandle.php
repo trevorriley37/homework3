@@ -1,5 +1,6 @@
 <?php require_once("header.php"); ?>
 
+<?php
 
 $sql = "SELECT instructor_id, instructor_name from instructor";
 $result = $conn->query($sql);
