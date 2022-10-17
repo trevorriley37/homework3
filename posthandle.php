@@ -1,50 +1,37 @@
 <?php require_once("header.php"); ?>
 
-<?
-//an attempt at using post variable to filter data, where statement seems to not enjoy it
 
-?>
-<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-  Name: <input type="text" name="fname">
-  <input type="submit">
-</form>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = $_POST['fname'];
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        
-        echo $name;
-    }
-}
-?>
-
-<?php
-
-$sql = "SELECT c.city_ID,Abbreviation ,fullname, Baseball_name, football_name,Team_Name FROM Baseball b join Football f on b.city_ID =f.city_ID join City c on f.city_ID =c.city_ID join Basketball ba on c.city_ID = ba.city_ID where fullname=" . $_POST['fname'];
+$sql = "SELECT instructor_id, instructor_name from instructor";
 $result = $conn->query($sql);
-  
-  if ($result->num_rows > 0) {
+
+if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-  <tr>
-    <td><?=$row["fullname"]?></td>
-    <td><?=$row["Team_Name"]?></td>
-    <td><?=$row["football_name"]?></td>
-    <td><?=$row["Baseball_name"]?></td>
-  </tr>
+   <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><?=$row["instructor_name"]?></h5>
+      <p class="card-text"><ul>
+<?php
+    $section_sql = "select c.description from section s join instructor i on i.instructor_id = s.instructor_id join course c on c.course_id = s.course_id where i.instructor_id=" . $row["instructor_id"];
+    $section_result = $conn->query($section_sql);
+    
+    while($section_row = $section_result->fetch_assoc()) {
+      echo "<li>" . $section_row["description"] . "</li>";
+    }
+?>
+      </ul></p>
+  </div>
+    </div>
 <?php
   }
 } else {
   echo "0 results";
 }
-    
 $conn->close();
 ?>
+  </card-group>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
 </html>
