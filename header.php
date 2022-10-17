@@ -51,7 +51,7 @@ echo "Connected successfully";
           <a class="nav-link" href="together.php">Together</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="posthandle.php">Post</a>
+          <a class="nav-link" href="relatedrecords.php">Related Records</a>
         </li>
       </ul>
     </div>
