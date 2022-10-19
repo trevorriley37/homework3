@@ -7,6 +7,7 @@
       <th scope="col">City ID</th>
       <th scope="col"></th>
       <th scope="col">Name</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
@@ -29,7 +30,7 @@ if ($result->num_rows > 0) {
      
    <td><?=$row["city_ID"]?></td>
     <td><?=$row["Abbreviation"]?></td>
-    <td><a name="id" value=<?=$row["city_ID"]?> "href="cities.php" ><?=$row["fullname"]?></a></td>
+    <td><?=$row["fullname"]?></td>
     </tr>
  
 <?php
