@@ -31,6 +31,11 @@ if ($result->num_rows > 0) {
    <td><?=$row["city_ID"]?></td>
     <td><?=$row["Abbreviation"]?></td>
     <td><?=$row["fullname"]?></td>
+    <td>
+      <form method="post" action="citys.php">
+        <input type="hidden" name="id" value="<?=$row["city_ID"]?>"/>
+        <input type="submit" value="City" />
+      </form>
     </tr>
  
 <?php
